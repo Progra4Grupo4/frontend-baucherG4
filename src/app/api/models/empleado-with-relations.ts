@@ -7,7 +7,7 @@ import { CuentaWithRelations } from './cuenta-with-relations';
  */
 export interface EmpleadoWithRelations {
   Correo: string;
-  codigoEmpleado?: string;
+  codigoEmpleado: string;
   cuentas?: Array<CuentaWithRelations>;
   nombre: string;
   sueldo: number;

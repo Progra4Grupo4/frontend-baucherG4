@@ -2,7 +2,7 @@
 /* eslint-disable */
 export interface Empleado {
   Correo: string;
-  codigoEmpleado?: string;
+  codigoEmpleado: string;
   nombre: string;
   sueldo: number;
 }
