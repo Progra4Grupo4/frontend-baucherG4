@@ -1,0 +1,28 @@
+<nz-table #basicTable [nzData]="empleado">
+    <thead>
+      <tr>
+        <th>CodigoEmpleado</th>
+        <th>Correo</th>
+        <th>Nombre</th>
+        <th>Sueldo</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let data of basicTable.data; let i=index">
+        <td>{{i+1}}</td>
+        <td>{{data.nombre}}</td>
+        <td>{{data.Correo}}</td>
+        <td>{{data.codigoEmpleado}}</td>
+        <td>{{data.sueldo}}</td>
+        <td>
+    <div *ngIf="data.codigoEmpleado"><i nz-icon nzType="check-square" nzTheme="outline"></i>
+    </div>        
+        </td>
+        <td>
+          <a><i nz-icon nzType="edit" nzTheme="twotone"></i></a>
+          <nz-divider nzType="vertical"></nz-divider>
+          <a><i nz-icon nzType="delete" nzTheme="outline"></i></a>
+        </td>
+      </tr>
+    </tbody>
+  </nz-table>
